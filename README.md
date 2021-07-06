@@ -9,7 +9,7 @@ Please write a CLI application that outputs:
 - Top 10 repositories sorted by amount of watch events
 
 This assignment must be done in any type-safe language that the candidate prefers, extra points will be given for using Golang.
-Please don't use any type of database or datat processing engines (such as Apache Spark), this data should be processed by your application.
+Please don't use any type of database or data processing engines (such as Apache Spark), this data should be processed by your application.
 
 What we want to see in your solution:
 
