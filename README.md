@@ -1,19 +1,23 @@
 # Test assignment for Analytics Software Engineer position
 
-This repo contains Github event data for 1 hour.
+### usage
 
-Please write a CLI application that outputs:
+```shell
+    make clean build run
 
-- Top 10 active users sorted by amount of PRs created and commits pushed
-- Top 10 repositories sorted by amount of commits pushed
-- Top 10 repositories sorted by amount of watch events
+    or
 
-This assignment must be done in any type-safe language that the candidate prefers, extra points will be given for using Golang.
-Please don't use any type of database or data processing engines (such as Apache Spark), this data should be processed by your application.
+    make clean build
+    ./analytics-software-engineer-assignment ./assets/data
+    # ^^ this should work, repo contains commit with
+    # these extracted files
+    ./analytics-software-engineer-assignment mydirwithfiles
+```
 
-What we want to see in your solution:
+#### Opinion
 
-- Readable, well structured code
-- Tests
-- Structured, meaningful commits
-- Some instructions on how to run the solution
+IMO analysis like this would require one to build a fully fledged database. This database would have custom indices (again data-structures) which are kind of optimized for kind of queries that we run.
+
+#### Pipeline
+
+<img src="assets/pipeline.png"/>
