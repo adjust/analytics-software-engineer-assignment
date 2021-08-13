@@ -1,20 +1,21 @@
 package app
 
 import (
+	"fmt"
 	"strings"
 
 	"github.com/junaid1460/analytics-software-engineer-assignment/packages/actors"
 	"github.com/junaid1460/analytics-software-engineer-assignment/packages/repositories"
 )
 
-func RunFromFiles() {
+func RunFromFiles(directory string) {
 	database := NewDB()
 
 	database.BulkReadDataFromFiles(BulkReadDataFromFilesInput{
-		actorsFilePath:  "./assets/data/actors.csv",
-		commitsFilePath: "./assets/data/commits.csv",
-		reposFilePath:   "./assets/data/repos.csv",
-		eventsFilePath:  "./assets/data/events.csv",
+		actorsFilePath:  fmt.Sprintf("%s/actors.csv", directory),
+		commitsFilePath: fmt.Sprintf("%s/commits.csv", directory),
+		reposFilePath:   fmt.Sprintf("%s/repos.csv", directory),
+		eventsFilePath:  fmt.Sprintf("%s/events.csv", directory),
 	})
 
 	top10UsersByPRandCommits := database.TopUsersByPRsAndCommits(10)
