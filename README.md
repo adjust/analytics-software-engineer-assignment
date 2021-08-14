@@ -21,3 +21,11 @@ IMO analysis like this would require one to build a fully fledged database. This
 #### Pipeline
 
 <img src="assets/pipeline.png"/>
+
+#### Brief about the approach
+
+<img src="assets/approach.png"/>
+
+## License
+
+None, take it, it's for free
