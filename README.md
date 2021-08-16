@@ -8,12 +8,25 @@ Please write a CLI application that outputs:
 - Top 10 repositories sorted by amount of commits pushed
 - Top 10 repositories sorted by amount of watch events
 
-This assignment must be done in any type-safe language that the candidate prefers, extra points will be given for using Golang.
+The CLI interface definition is up to you.
+
+This assignment must be written in Golang.
 Please don't use any type of database or data processing engines (such as Apache Spark), this data should be processed by your application.
 
 What we want to see in your solution:
 
-- Readable, well structured code
-- Tests
-- Structured, meaningful commits
-- Some instructions on how to run the solution
+Your code should be:
+    - Readable
+    - Testable
+    - Maintainable
+    - Extensible
+    - Modifiable
+    - Performant
+
+Please be prepared to answer questions on how you achieved those goals and which trade offs you made.
+
+Please also keep an eye on:
+
+    - Tests
+    - Structured, meaningful commits
+    - a Readme on how to run the solution
